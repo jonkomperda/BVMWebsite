@@ -66,10 +66,11 @@
     <circle cx="835" cy="570" r="5" />
   </g>
   <g font-family="Inter, Arial, sans-serif">
-    <rect x="54" y="50" width="360" height="116" rx="8" fill="#101923" stroke="#ffffff" stroke-opacity="0.16" />
+    <rect x="54" y="50" width="430" height="140" rx="8" fill="#101923" stroke="#ffffff" stroke-opacity="0.16" />
     <text x="78" y="92" fill="#ffcc73" font-size="21" font-weight="900">100-mile service area</text>
     <text x="78" y="126" fill="#dce5f4" font-size="18">Centered from Justice, Illinois</text>
-    <text x="78" y="151" fill="#a8b3c7" font-size="16">Security, networking, AV, access, and lighting installs</text>
+    <text x="78" y="152" fill="#a8b3c7" font-size="16">Security, networking, AV, and access</text>
+    <text x="78" y="176" fill="#a8b3c7" font-size="16">Lighting and smart system installs</text>
   </g>
   <g font-family="Inter, Arial, sans-serif">
     <rect x="846" y="48" width="292" height="70" rx="8" fill="#071018" fill-opacity="0.78" stroke="#ffffff" stroke-opacity="0.16" />
