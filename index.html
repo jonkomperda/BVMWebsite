@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BVM Surveillance installs security cameras, NVRs, license plate readers, networking, smart locks, intercoms, smart home systems, and outdoor smart lighting within 100 miles of Justice, Illinois."
+    />
+    <title>BVM Surveillance | Security Cameras, Networking & Smart Home Installation</title>
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="preconnect" href="https://tile.openstreetmap.org" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIINfQipVAo+I0C0JZl9VEhTKaiM/cWnC8E="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="BVM Surveillance home">
+        <span class="brand-mark">BVM</span>
+        <span class="brand-text">Surveillance</span>
+      </a>
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#services">Services</a>
+        <a href="#homes-businesses">Homes & Business</a>
+        <a href="#service-area">Service Area</a>
+      </nav>
+      <a class="header-call" href="tel:+13125222587" aria-label="Call BVM Surveillance at 312 522 2587">
+        <i data-lucide="phone-call" aria-hidden="true"></i>
+        <span>(312) 522-2587</span>
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/bvm-hero.png"
+          alt="Modern property with security camera, video doorbell, and outdoor lighting at dusk"
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Security, networking, access control, and smart lighting</p>
+          <h1 id="hero-title">Premium protection for homes and businesses.</h1>
+          <p class="hero-copy">
+            BVM Surveillance installs reliable camera systems, NVRs, license plate readers, network wiring,
+            smart locks, intercoms, and connected lighting across the Chicagoland area.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="tel:+13125222587">
+              <i data-lucide="phone-call" aria-hidden="true"></i>
+              <span>Call Now</span>
+            </a>
+            <a class="secondary-button" href="#services">
+              <i data-lucide="shield-check" aria-hidden="true"></i>
+              <span>View Services</span>
+            </a>
+          </div>
+          <div class="trust-row" aria-label="Service highlights">
+            <span><i data-lucide="camera" aria-hidden="true"></i> Cameras & NVRs</span>
+            <span><i data-lucide="wifi" aria-hidden="true"></i> Networking</span>
+            <span><i data-lucide="lightbulb" aria-hidden="true"></i> Smart Lighting</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band" aria-label="Company contact details">
+        <div class="intro-item">
+          <i data-lucide="map-pin" aria-hidden="true"></i>
+          <span>18 Ottawa Ct, Justice, IL</span>
+        </div>
+        <div class="intro-item">
+          <i data-lucide="route" aria-hidden="true"></i>
+          <span>Serving within 100 miles of Justice</span>
+        </div>
+        <div class="intro-item">
+          <i data-lucide="home" aria-hidden="true"></i>
+          <span>Residential and commercial installs</span>
+        </div>
+      </section>
+
+      <section class="section services-section" id="services" aria-labelledby="services-title">
+        <div class="section-heading">
+          <p class="eyebrow">What we install</p>
+          <h2 id="services-title">One installer for your connected property.</h2>
+          <p>
+            From the cable path to the final device setup, BVM builds clean systems that are practical,
+            dependable, and easy to use.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card featured-service">
+            <i data-lucide="cctv" aria-hidden="true"></i>
+            <h3>Security Cameras & Doorbells</h3>
+            <p>Camera placement, video doorbells, remote viewing setup, and clean installs for homes and storefronts.</p>
+          </article>
+          <article class="service-card">
+            <i data-lucide="server" aria-hidden="true"></i>
+            <h3>NVR Installation</h3>
+            <p>Network video recorder setup, storage planning, camera connections, and system configuration.</p>
+          </article>
+          <article class="service-card">
+            <i data-lucide="scan-line" aria-hidden="true"></i>
+            <h3>License Plate Readers</h3>
+            <p>Dedicated LPR camera placement and setup for driveways, lots, gates, and business entrances.</p>
+          </article>
+          <article class="service-card">
+            <i data-lucide="cable" aria-hidden="true"></i>
+            <h3>Ethernet Lines</h3>
+            <p>Hardwired network drops for cameras, offices, access points, NVRs, TVs, and workstations.</p>
+          </article>
+          <article class="service-card">
+            <i data-lucide="radio-tower" aria-hidden="true"></i>
+            <h3>Wi-Fi Bridges & Hotspots</h3>
+            <p>Outdoor links, detached building connections, coverage improvements, and hotspot placement.</p>
+          </article>
+          <article class="service-card">
+            <i data-lucide="lock-keyhole" aria-hidden="true"></i>
+            <h3>Smart Locks & Keyless Entry</h3>
+            <p>Door access upgrades for homes, rental properties, offices, and controlled entry points.</p>
+          </article>
+          <article class="service-card">
+            <i data-lucide="message-square" aria-hidden="true"></i>
+            <h3>Intercoms</h3>
+            <p>Entry communication systems for front doors, gates, offices, apartments, and small businesses.</p>
+          </article>
+          <article class="service-card">
+            <i data-lucide="house-wifi" aria-hidden="true"></i>
+            <h3>Smart Home Systems</h3>
+            <p>Connected devices, automation-ready installs, smart access, cameras, lighting, and network support.</p>
+          </article>
+          <article class="service-card">
+            <i data-lucide="network" aria-hidden="true"></i>
+            <h3>Home & Business Networking</h3>
+            <p>Routers, switches, access points, structured wiring, and stronger coverage for daily use.</p>
+          </article>
+          <article class="service-card lighting-service">
+            <i data-lucide="sparkles" aria-hidden="true"></i>
+            <h3>Permanent Lights</h3>
+            <p>Govee and similar permanent light installs for clean exterior accent and holiday lighting.</p>
+          </article>
+          <article class="service-card lighting-service">
+            <i data-lucide="lamp-ceiling" aria-hidden="true"></i>
+            <h3>Outdoor Smart Lighting</h3>
+            <p>Smart exterior lights, pathway lighting, security lighting, schedules, and app-connected control.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-section" id="homes-businesses" aria-labelledby="property-title">
+        <div class="split-copy">
+          <p class="eyebrow">Homes and businesses</p>
+          <h2 id="property-title">Designed around the way your property actually works.</h2>
+          <p>
+            A good system is more than a box of devices. BVM helps plan camera views, wiring, network coverage,
+            access points, and lighting so everything works together without clutter.
+          </p>
+          <div class="check-list" aria-label="Installation priorities">
+            <span><i data-lucide="check" aria-hidden="true"></i> Clean cable paths and device placement</span>
+            <span><i data-lucide="check" aria-hidden="true"></i> Practical setup for remote access and daily use</span>
+            <span><i data-lucide="check" aria-hidden="true"></i> Residential, retail, office, and light commercial support</span>
+          </div>
+        </div>
+        <div class="signal-panel" aria-label="BVM service capabilities">
+          <div class="signal-card">
+            <span class="signal-number">100 mi</span>
+            <span>service radius from Justice, IL</span>
+          </div>
+          <div class="signal-card">
+            <span class="signal-number">1 call</span>
+            <span>for cameras, networking, access, and lighting</span>
+          </div>
+          <div class="signal-card">
+            <span class="signal-number">24/7</span>
+            <span>systems built for around-the-clock visibility</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section map-section" id="service-area" aria-labelledby="area-title">
+        <div class="section-heading">
+          <p class="eyebrow">Service area</p>
+          <h2 id="area-title">Based in Justice, serving within 100 miles.</h2>
+          <p>
+            BVM Surveillance is located at 18 Ottawa Ct in Justice, Illinois and serves residential and
+            business customers throughout the surrounding region.
+          </p>
+        </div>
+        <div class="map-wrap">
+          <div id="service-map" class="service-map" role="img" aria-label="Interactive map showing a 100-mile service radius from Justice, Illinois">
+            <div class="map-fallback">
+              Interactive map unavailable. BVM Surveillance serves within 100 miles of Justice, Illinois.
+            </div>
+          </div>
+          <div class="map-card">
+            <i data-lucide="map-pinned" aria-hidden="true"></i>
+            <h3>100-mile radius</h3>
+            <p>Centered near Justice, IL for security, networking, smart access, and lighting installations.</p>
+            <a href="tel:+13125222587">Call to confirm availability</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section" aria-labelledby="cta-title">
+        <div>
+          <p class="eyebrow">Ready to secure your property?</p>
+          <h2 id="cta-title">Call BVM Surveillance for a clean, connected install.</h2>
+          <p>Security cameras, NVRs, networking, access control, smart home devices, and outdoor lighting.</p>
+        </div>
+        <a class="primary-button" href="tel:+13125222587">
+          <i data-lucide="phone-call" aria-hidden="true"></i>
+          <span>(312) 522-2587</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>BVM Surveillance</strong>
+        <span>18 Ottawa Ct, Justice, IL</span>
+      </div>
+      <a href="tel:+13125222587">(312) 522-2587</a>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
