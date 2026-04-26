@@ -5,17 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="BVM Surveillance installs security cameras, NVRs, license plate readers, networking, smart locks, intercoms, smart home systems, and outdoor smart lighting within 100 miles of Justice, Illinois."
+      content="BVM Surveillance installs security cameras, AI-based smart detection systems, NVRs, license plate readers, networking, access systems, TVs, digital signage, menu boards, commercial sound systems, smart home systems, and outdoor lighting for homes and businesses around Justice and Chicagoland."
     />
-    <title>BVM Surveillance | Security Cameras, Networking & Smart Home Installation</title>
+    <title>BVM Surveillance | Security, Networking, TVs, Sound &amp; Smart Lighting</title>
     <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="preconnect" href="https://www.openstreetmap.org" />
     <link rel="preconnect" href="https://tile.openstreetmap.org" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIINfQipVAo+I0C0JZl9VEhTKaiM/cWnC8E="
-      crossorigin=""
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -26,8 +21,8 @@
       </a>
       <nav class="nav-links" aria-label="Page sections">
         <a href="#services">Services</a>
-        <a href="#homes-businesses">Homes & Business</a>
-        <a href="#service-area">Service Area</a>
+        <a href="#scenarios">Installs</a>
+        <a href="#service-area">Map</a>
       </nav>
       <a class="header-call" href="tel:+13125222587" aria-label="Call BVM Surveillance at 312 522 2587">
         <i data-lucide="phone-call" aria-hidden="true"></i>
@@ -39,16 +34,17 @@
       <section class="hero" aria-labelledby="hero-title">
         <img
           class="hero-image"
-          src="assets/bvm-hero.png"
-          alt="Modern property with security camera, video doorbell, and outdoor lighting at dusk"
+          src="assets/bvm-hero.jpg"
+          alt="Modern property with a security camera, video doorbell, and outdoor lighting at dusk"
         />
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="eyebrow">Security, networking, access control, and smart lighting</p>
-          <h1 id="hero-title">Premium protection for homes and businesses.</h1>
+          <p class="eyebrow">Security, AI detection, networking, displays, sound, access, and lighting</p>
+          <h1 id="hero-title">Premium installs for homes and businesses.</h1>
           <p class="hero-copy">
-            BVM Surveillance installs reliable camera systems, NVRs, license plate readers, network wiring,
-            smart locks, intercoms, and connected lighting across the Chicagoland area.
+            BVM Surveillance installs cameras, NVRs, license plate readers, network wiring, TVs,
+            digital signage, commercial sound systems, smart locks, intercoms, AI-based detection,
+            smart home systems, and connected lighting across Chicagoland.
           </p>
           <div class="hero-actions">
             <a class="primary-button" href="tel:+13125222587">
@@ -59,11 +55,16 @@
               <i data-lucide="shield-check" aria-hidden="true"></i>
               <span>View Services</span>
             </a>
+            <a class="secondary-button" href="assets/bvm-surveillance.vcf" download="BVM-Surveillance.vcf">
+              <i data-lucide="user-plus" aria-hidden="true"></i>
+              <span>Add to Contacts</span>
+            </a>
           </div>
           <div class="trust-row" aria-label="Service highlights">
-            <span><i data-lucide="camera" aria-hidden="true"></i> Cameras & NVRs</span>
-            <span><i data-lucide="wifi" aria-hidden="true"></i> Networking</span>
-            <span><i data-lucide="lightbulb" aria-hidden="true"></i> Smart Lighting</span>
+            <span><i data-lucide="camera" aria-hidden="true"></i> Cameras &amp; NVRs</span>
+            <span><i data-lucide="monitor" aria-hidden="true"></i> TVs &amp; Signage</span>
+            <span><i data-lucide="scan-face" aria-hidden="true"></i> Smart Detection</span>
+            <span><i data-lucide="volume-2" aria-hidden="true"></i> Commercial Sound</span>
           </div>
         </div>
       </section>
@@ -74,8 +75,8 @@
           <span>18 Ottawa Ct, Justice, IL</span>
         </div>
         <div class="intro-item">
-          <i data-lucide="route" aria-hidden="true"></i>
-          <span>Serving within 100 miles of Justice</span>
+          <i data-lucide="building-2" aria-hidden="true"></i>
+          <span>Restaurants, bars, gas stations, offices, storefronts</span>
         </div>
         <div class="intro-item">
           <i data-lucide="home" aria-hidden="true"></i>
@@ -88,64 +89,93 @@
           <p class="eyebrow">What we install</p>
           <h2 id="services-title">One installer for your connected property.</h2>
           <p>
-            From the cable path to the final device setup, BVM builds clean systems that are practical,
-            dependable, and easy to use.
+            From cameras and cabling to displays and smart lighting, BVM builds clean systems that are
+            practical, dependable, and easy to use.
           </p>
         </div>
 
         <div class="service-grid">
           <article class="service-card featured-service">
             <i data-lucide="cctv" aria-hidden="true"></i>
-            <h3>Security Cameras & Doorbells</h3>
-            <p>Camera placement, video doorbells, remote viewing setup, and clean installs for homes and storefronts.</p>
-          </article>
-          <article class="service-card">
-            <i data-lucide="server" aria-hidden="true"></i>
-            <h3>NVR Installation</h3>
-            <p>Network video recorder setup, storage planning, camera connections, and system configuration.</p>
+            <span class="service-type">Security</span>
+            <h3>Cameras, Doorbells &amp; NVRs</h3>
+            <p>Camera placement, video doorbells, NVR setup, storage planning, and remote viewing configuration.</p>
           </article>
           <article class="service-card">
             <i data-lucide="scan-line" aria-hidden="true"></i>
+            <span class="service-type">Vehicle coverage</span>
             <h3>License Plate Readers</h3>
-            <p>Dedicated LPR camera placement and setup for driveways, lots, gates, and business entrances.</p>
+            <p>Dedicated LPR camera placement for driveways, lots, gates, gas stations, and business entrances.</p>
+          </article>
+          <article class="service-card featured-service">
+            <i data-lucide="scan-face" aria-hidden="true"></i>
+            <span class="service-type">Smart security</span>
+            <h3>AI-Based Detection</h3>
+            <p>Facial recognition, loitering alerts, human and vehicle detection, and AI-based tracking/following features.</p>
           </article>
           <article class="service-card">
             <i data-lucide="cable" aria-hidden="true"></i>
+            <span class="service-type">Networking</span>
             <h3>Ethernet Lines</h3>
-            <p>Hardwired network drops for cameras, offices, access points, NVRs, TVs, and workstations.</p>
+            <p>Hardwired drops for cameras, offices, access points, NVRs, TVs, displays, and workstations.</p>
           </article>
           <article class="service-card">
             <i data-lucide="radio-tower" aria-hidden="true"></i>
-            <h3>Wi-Fi Bridges & Hotspots</h3>
-            <p>Outdoor links, detached building connections, coverage improvements, and hotspot placement.</p>
+            <span class="service-type">Coverage</span>
+            <h3>Wi-Fi Bridges &amp; Hotspots</h3>
+            <p>Outdoor links, detached building connections, hotspot placement, and stronger wireless coverage.</p>
+          </article>
+          <article class="service-card">
+            <i data-lucide="network" aria-hidden="true"></i>
+            <span class="service-type">Infrastructure</span>
+            <h3>Home &amp; Business Networking</h3>
+            <p>Routers, switches, access points, structured wiring, and network support for daily operations.</p>
           </article>
           <article class="service-card">
             <i data-lucide="lock-keyhole" aria-hidden="true"></i>
-            <h3>Smart Locks & Keyless Entry</h3>
-            <p>Door access upgrades for homes, rental properties, offices, and controlled entry points.</p>
+            <span class="service-type">Access</span>
+            <h3>Smart Locks &amp; Keyless Entry</h3>
+            <p>Door access upgrades for homes, rentals, offices, employee entries, and controlled access points.</p>
           </article>
           <article class="service-card">
             <i data-lucide="message-square" aria-hidden="true"></i>
+            <span class="service-type">Entry systems</span>
             <h3>Intercoms</h3>
             <p>Entry communication systems for front doors, gates, offices, apartments, and small businesses.</p>
           </article>
           <article class="service-card">
             <i data-lucide="house-wifi" aria-hidden="true"></i>
+            <span class="service-type">Automation</span>
             <h3>Smart Home Systems</h3>
             <p>Connected devices, automation-ready installs, smart access, cameras, lighting, and network support.</p>
           </article>
-          <article class="service-card">
-            <i data-lucide="network" aria-hidden="true"></i>
-            <h3>Home & Business Networking</h3>
-            <p>Routers, switches, access points, structured wiring, and stronger coverage for daily use.</p>
+          <article class="service-card display-service">
+            <i data-lucide="tv" aria-hidden="true"></i>
+            <span class="service-type">Commercial AV</span>
+            <h3>TVs for Businesses</h3>
+            <p>TV mounting and setup for restaurants, gas stations, offices, waiting rooms, bars, and storefronts.</p>
+          </article>
+          <article class="service-card display-service">
+            <i data-lucide="panel-top" aria-hidden="true"></i>
+            <span class="service-type">Displays</span>
+            <h3>Digital Signage &amp; Menus</h3>
+            <p>Menu boards, customer-facing screens, promotional displays, multi-screen layouts, and video walls.</p>
+          </article>
+          <article class="service-card sound-service">
+            <i data-lucide="volume-2" aria-hidden="true"></i>
+            <span class="service-type">Commercial audio</span>
+            <h3>Restaurant &amp; Bar Sound Systems</h3>
+            <p>Commercial speakers, zones, amps, audio wiring, and background music systems for bars and restaurants.</p>
           </article>
           <article class="service-card lighting-service">
             <i data-lucide="sparkles" aria-hidden="true"></i>
-            <h3>Permanent Lights</h3>
+            <span class="service-type">Permanent lighting</span>
+            <h3>Govee-Style Exterior Lights</h3>
             <p>Govee and similar permanent light installs for clean exterior accent and holiday lighting.</p>
           </article>
           <article class="service-card lighting-service">
             <i data-lucide="lamp-ceiling" aria-hidden="true"></i>
+            <span class="service-type">Outdoor control</span>
             <h3>Outdoor Smart Lighting</h3>
             <p>Smart exterior lights, pathway lighting, security lighting, schedules, and app-connected control.</p>
           </article>
@@ -158,64 +188,113 @@
           <h2 id="property-title">Designed around the way your property actually works.</h2>
           <p>
             A good system is more than a box of devices. BVM helps plan camera views, wiring, network coverage,
-            access points, and lighting so everything works together without clutter.
+            displays, sound, smart detection, access points, and lighting so everything works together without clutter.
           </p>
           <div class="check-list" aria-label="Installation priorities">
             <span><i data-lucide="check" aria-hidden="true"></i> Clean cable paths and device placement</span>
             <span><i data-lucide="check" aria-hidden="true"></i> Practical setup for remote access and daily use</span>
-            <span><i data-lucide="check" aria-hidden="true"></i> Residential, retail, office, and light commercial support</span>
+            <span><i data-lucide="check" aria-hidden="true"></i> Residential, retail, office, restaurant, bar, and gas station support</span>
           </div>
         </div>
         <div class="signal-panel" aria-label="BVM service capabilities">
           <div class="signal-card">
-            <span class="signal-number">100 mi</span>
-            <span>service radius from Justice, IL</span>
+            <span class="signal-number">AV</span>
+            <span>TVs, menu boards, signage, sound systems, display walls, and customer-facing screens</span>
           </div>
           <div class="signal-card">
-            <span class="signal-number">1 call</span>
-            <span>for cameras, networking, access, and lighting</span>
+            <span class="signal-number">LAN</span>
+            <span>Ethernet, Wi-Fi bridges, hotspots, switches, routers, and access points</span>
           </div>
           <div class="signal-card">
-            <span class="signal-number">24/7</span>
-            <span>systems built for around-the-clock visibility</span>
+            <span class="signal-number">AI</span>
+            <span>smart alerts for faces, people, vehicles, loitering, and tracking/following events</span>
           </div>
         </div>
       </section>
 
-      <section class="section map-section" id="service-area" aria-labelledby="area-title">
+      <section class="section scenarios-section" id="scenarios" aria-labelledby="scenarios-title">
         <div class="section-heading">
-          <p class="eyebrow">Service area</p>
-          <h2 id="area-title">Based in Justice, serving within 100 miles.</h2>
+          <p class="eyebrow">Installation scenarios</p>
+          <h2 id="scenarios-title">Built for Chicagoland properties.</h2>
           <p>
-            BVM Surveillance is located at 18 Ottawa Ct in Justice, Illinois and serves residential and
-            business customers throughout the surrounding region.
+            Residential, retail, restaurant, bar, gas station, and storefront installs each need a different mix
+            of cameras, cabling, displays, sound, access control, smart detection, networking, and lighting.
           </p>
         </div>
-        <div class="map-wrap">
-          <div id="service-map" class="service-map" role="img" aria-label="Interactive map showing a 100-mile service radius from Justice, Illinois">
-            <div class="map-fallback">
-              Interactive map unavailable. BVM Surveillance serves within 100 miles of Justice, Illinois.
+
+        <div class="scenario-grid">
+          <article class="scenario-card large-scenario">
+            <img src="assets/chicago-residential-security.jpg" alt="Chicago-style brick home with security camera, video doorbell, and exterior lighting" />
+            <div>
+              <h3>Residential security and lighting</h3>
+              <p>Cameras, doorbells, outdoor lighting, and clean exterior placement for homes.</p>
             </div>
-          </div>
-          <div class="map-card">
-            <i data-lucide="map-pinned" aria-hidden="true"></i>
-            <h3>100-mile radius</h3>
-            <p>Centered near Justice, IL for security, networking, smart access, and lighting installations.</p>
-            <a href="tel:+13125222587">Call to confirm availability</a>
-          </div>
+          </article>
+          <article class="scenario-card large-scenario">
+            <img src="assets/ai-parking-lot-detection.jpg" alt="Security camera view of a dark parking lot with AI detection boxes around a license plate and a person in a hoodie" />
+            <div>
+              <h3>AI detection and tracking</h3>
+              <p>License plate detection, person detection, loitering alerts, and tracking/following events.</p>
+            </div>
+          </article>
+          <article class="scenario-card">
+            <img src="assets/gas-station-security-signage.jpg" alt="Gas station storefront with cameras, license plate reader coverage, network equipment, and digital displays" />
+            <div>
+              <h3>Gas stations and convenience stores</h3>
+              <p>Camera coverage, LPR angles, AI alerts, networking, and displays for high-traffic properties.</p>
+            </div>
+          </article>
+          <article class="scenario-card">
+            <img src="assets/restaurant-digital-menu-tvs.jpg" alt="Restaurant interior with digital menu boards, TVs, and a discreet ceiling security camera" />
+            <div>
+              <h3>Restaurants and menu boards</h3>
+              <p>Digital menus, customer screens, TVs, sound systems, cameras, and hidden network runs.</p>
+            </div>
+          </article>
+          <article class="scenario-card">
+            <img src="assets/residential-permanent-lighting.jpg" alt="Residential street with permanent roofline lighting, pathway lights, and exterior security cameras" />
+            <div>
+              <h3>Permanent outdoor lighting</h3>
+              <p>Govee-style roofline lights, smart outdoor lighting, and camera-ready entries.</p>
+            </div>
+          </article>
+          <article class="scenario-card">
+            <img src="assets/chicago-storefront-access-security.jpg" alt="Chicago-style storefront with security camera, intercom, keyless entry, and network access point" />
+            <div>
+              <h3>Storefront access and networking</h3>
+              <p>Smart locks, intercoms, exterior cameras, access points, and business networks.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section map-section" id="service-area" aria-labelledby="area-title">
+        <div class="section-heading map-heading">
+          <p class="eyebrow">Service area</p>
+          <h2 id="area-title">100-mile service area from Justice, Illinois.</h2>
+          <p>Use the map to view the service area around BVM Surveillance.</p>
+        </div>
+        <div class="map-frame">
+          <img src="assets/service-area-map.svg" alt="Map showing BVM Surveillance's 100-mile service area centered on Justice, Illinois" />
         </div>
       </section>
 
       <section class="cta-section" aria-labelledby="cta-title">
         <div>
-          <p class="eyebrow">Ready to secure your property?</p>
+          <p class="eyebrow">Ready to upgrade your property?</p>
           <h2 id="cta-title">Call BVM Surveillance for a clean, connected install.</h2>
-          <p>Security cameras, NVRs, networking, access control, smart home devices, and outdoor lighting.</p>
+          <p>Cameras, AI detection, NVRs, networking, access control, TVs, digital signage, commercial sound, smart lighting, and smart home systems.</p>
         </div>
-        <a class="primary-button" href="tel:+13125222587">
-          <i data-lucide="phone-call" aria-hidden="true"></i>
-          <span>(312) 522-2587</span>
-        </a>
+        <div class="cta-actions">
+          <a class="primary-button" href="tel:+13125222587">
+            <i data-lucide="phone-call" aria-hidden="true"></i>
+            <span>(312) 522-2587</span>
+          </a>
+          <a class="secondary-button" href="assets/bvm-surveillance.vcf" download="BVM-Surveillance.vcf">
+            <i data-lucide="user-plus" aria-hidden="true"></i>
+            <span>Add to Contacts</span>
+          </a>
+        </div>
       </section>
     </main>
 
@@ -227,11 +306,6 @@
       <a href="tel:+13125222587">(312) 522-2587</a>
     </footer>
 
-    <script
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script src="script.js"></script>
   </body>

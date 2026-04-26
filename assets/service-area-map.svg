@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">BVM Surveillance 100-mile service area map</title>
+  <desc id="desc">A stylized map centered on Justice, Illinois with a highlighted 100-mile service area covering the Chicago region and surrounding cities.</desc>
+  <defs>
+    <linearGradient id="water" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#123455" />
+      <stop offset="1" stop-color="#071722" />
+    </linearGradient>
+    <radialGradient id="radiusFill" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#42d2c5" stop-opacity="0.22" />
+      <stop offset="0.7" stop-color="#42d2c5" stop-opacity="0.1" />
+      <stop offset="1" stop-color="#42d2c5" stop-opacity="0.04" />
+    </radialGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="720" fill="#08121a" />
+  <path d="M760 0 C735 80 750 150 790 220 C825 282 835 332 812 385 C790 437 790 497 825 550 C858 600 870 658 852 720 L1200 720 L1200 0 Z" fill="url(#water)" />
+  <path d="M848 0 C820 90 835 154 876 225 C914 290 919 342 894 393 C868 448 872 506 907 560 C938 607 950 664 930 720" fill="none" stroke="#24445f" stroke-width="4" opacity="0.55" />
+  <g opacity="0.65" stroke="#26384a" stroke-width="2">
+    <path d="M92 122 C220 152 332 155 510 198 C618 224 710 260 812 340" fill="none" />
+    <path d="M120 565 C252 496 338 460 455 382 C555 315 660 264 830 206" fill="none" />
+    <path d="M210 88 C245 220 295 340 390 468 C450 548 510 610 595 680" fill="none" />
+    <path d="M522 60 C505 184 505 287 540 390 C578 502 642 585 724 676" fill="none" />
+    <path d="M48 345 C205 326 358 323 518 337 C642 348 738 370 840 410" fill="none" />
+  </g>
+  <g opacity="0.5" stroke="#1b2b3a" stroke-width="1">
+    <path d="M0 240 H760" />
+    <path d="M0 470 H805" />
+    <path d="M150 0 V720" />
+    <path d="M355 0 V720" />
+    <path d="M585 0 V720" />
+  </g>
+  <circle cx="520" cy="355" r="276" fill="url(#radiusFill)" stroke="#f4b24d" stroke-width="6" stroke-dasharray="16 12" filter="url(#glow)" />
+  <circle cx="520" cy="355" r="8" fill="#ffcc73" />
+  <circle cx="520" cy="355" r="18" fill="none" stroke="#ffcc73" stroke-width="3" />
+  <g font-family="Inter, Arial, sans-serif" font-size="23" fill="#e8eef8">
+    <text x="548" y="349" font-weight="800">Justice</text>
+    <text x="548" y="377" fill="#a8b3c7" font-size="18">BVM Surveillance</text>
+    <text x="660" y="270">Chicago</text>
+    <text x="635" y="178">Evanston</text>
+    <text x="402" y="250">Aurora</text>
+    <text x="392" y="438">Joliet</text>
+    <text x="202" y="198">Rockford</text>
+    <text x="498" y="96">Milwaukee</text>
+    <text x="710" y="476">Gary</text>
+    <text x="205" y="545">Ottawa</text>
+    <text x="514" y="613">Kankakee</text>
+    <text x="800" y="560">South Bend</text>
+  </g>
+  <g fill="#42d2c5" opacity="0.9">
+    <circle cx="680" cy="282" r="5" />
+    <circle cx="645" cy="189" r="5" />
+    <circle cx="420" cy="258" r="5" />
+    <circle cx="420" cy="448" r="5" />
+    <circle cx="238" cy="206" r="5" />
+    <circle cx="530" cy="108" r="5" />
+    <circle cx="732" cy="486" r="5" />
+    <circle cx="248" cy="554" r="5" />
+    <circle cx="542" cy="622" r="5" />
+    <circle cx="835" cy="570" r="5" />
+  </g>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="54" y="50" width="360" height="116" rx="8" fill="#101923" stroke="#ffffff" stroke-opacity="0.16" />
+    <text x="78" y="92" fill="#ffcc73" font-size="21" font-weight="900">100-mile service area</text>
+    <text x="78" y="126" fill="#dce5f4" font-size="18">Centered from Justice, Illinois</text>
+    <text x="78" y="151" fill="#a8b3c7" font-size="16">Security, networking, AV, access, and lighting installs</text>
+  </g>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="846" y="48" width="292" height="70" rx="8" fill="#071018" fill-opacity="0.78" stroke="#ffffff" stroke-opacity="0.16" />
+    <circle cx="876" cy="83" r="10" fill="#ffcc73" />
+    <text x="898" y="89" fill="#e8eef8" font-size="18" font-weight="800">Justice, IL base</text>
+  </g>
+</svg>
